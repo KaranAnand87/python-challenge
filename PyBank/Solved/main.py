@@ -13,11 +13,12 @@ cmpl=0
 plchange = 0
 
 # Path to collect data from the Resources folder
-bank_csvpath = os.path.join('..', 'Resources', 'budget_data.csv')
+bank_csvpath = os.path.join("..", "Resources", "budget_data.csv")
 
 # Reading of CSV files
 with open(bank_csvpath, encoding='utf') as csvfile:
   csvreader = csv.reader(csvfile, delimiter = ",")
+  #Reads and stores the header row
   csvheader = next(csvfile)
   
 

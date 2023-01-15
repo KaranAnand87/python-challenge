@@ -16,6 +16,7 @@ poll_csvpath = os.path.join("..", "Resources", "election_data.csv")
 # Reading of csv files
 with open(poll_csvpath, encoding="utf") as csvfile:
     csvreader = csv.reader(csvfile, delimiter=",")
+    #Reads and stores the header row
     csvheader = next(csvfile)
 
     # Read through each row of data 
