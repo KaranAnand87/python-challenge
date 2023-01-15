@@ -1,5 +1,4 @@
 # First we'll import the os module
-# This will allow us to create file paths across operating systems
 import os
 # Module for reading CSV files
 import csv
@@ -20,7 +19,7 @@ bank_csvpath = os.path.join('..', 'Resources', 'budget_data.csv')
 with open(bank_csvpath, encoding='utf') as csvfile:
   csvreader = csv.reader(csvfile, delimiter = ",")
   csvheader = next(csvfile)
-  #print(f"Header : {csvheader}")
+  
 
   # Read through each row of data 
   for row in csvreader:
